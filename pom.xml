@@ -27,14 +27,16 @@
         <url>http://52.204.135.48:8081/nexus/content/repositories/releases</url>
   </repository>
 </distributionManagement>
-  <build>
+<build>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version> <!-- Use the appropriate version -->
-          <source>1.8</source>
-          <target>1.8</target>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
         </plugin>
     </plugins>
 </build>
